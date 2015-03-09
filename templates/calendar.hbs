@@ -1,0 +1,17 @@
+<h3>Hey you have some events going on here.</h3>
+
+<ul>
+  {{#each day in model}}
+    <div class="col-md-12">
+      <li>
+        {{#link-to 'day' day}}
+          <h3>{{day.dayName}}</h3>
+        {{/link-to}}
+      </li>
+    </div>
+  {{/each}}
+</ul>
+
+<div class="col-md-12">
+  {{#link-to 'new-day' class="btn btn-primary"}}Add Day{{/link-to}}
+</div>
