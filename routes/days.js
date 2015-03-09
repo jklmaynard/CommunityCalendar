@@ -1,4 +1,4 @@
-CommunityCalendar.DaysRoute = Ember.Route.extend({
+CommunityCalendar.CalendarRoute = Ember.Route.extend({
   model: function() {
     return this.store.find('day');
   }
