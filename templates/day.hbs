@@ -14,7 +14,9 @@
   <h3>Events on {{dayDate}}</h3>
 
   {{#each interest in interests itemController = "interest"}}
-    <p>{{interest.description}} {{interest.time}}</p>
+    {{#link-to 'interest' interest}}
+      <p>{{interest.description}} {{interest.time}}</p>
+    {{/link-to}}
   {{/each}}
 </div>
 <br>
