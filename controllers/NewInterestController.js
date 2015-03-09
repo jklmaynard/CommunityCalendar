@@ -9,6 +9,9 @@ CommunityCalendar.NewInterestController = Ember.ObjectController.extend({
         day.save();
         controller.transitionToRoute('day', day);
       });
+    },
+    cancel: function() {
+      this.transitionToRoute('day')
     }
   }
 });
