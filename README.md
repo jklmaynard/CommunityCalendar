@@ -4,4 +4,4 @@ The purpose of this application was to create a calendar of events for the poetr
 
 Although I am pleased with how Ember manages its files and breaks down all the components into routes and models, I find the library limiting.  I'm going to continue this application, but using Angular instead, to see what versatility that library has.
 
-License 2015 MollyDog Digital
+License 2015 MollyDog Digital, James Maynard
