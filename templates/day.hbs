@@ -1,26 +1,23 @@
-<div class="col-md-12">
-  <h1>{{dayName}}</h1>
+<div class="col-md-6">
+  <h3>{{dayName}}</h3>
   <h4>{{dayDate}}</h4>
-  {{#link-to 'new-interest' class="btn btn-primary"}}Add Event{{/link-to}}
-</div>
 <br>
-
-<div class="col-md-12">
-  <h3>Events on {{dayDate}}</h3>
+  <h4>Events on {{dayDate}}</h4>
 
   {{#each interest in interests itemController = "interest"}}
     {{#link-to 'interest' interest}}
       <p>{{interest.description}} {{interest.time}}</p>
     {{/link-to}}
   {{/each}}
+  {{#link-to 'new-interest' class="btn btn-primary"}}Add Event{{/link-to}}
 </div>
 <br>
 
-<div class="col-md-12">
+<div class="col-md-6">
 {{outlet}}
 </div>
-<br>
 
 <div class="col-md-12">
+<br>
 <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
 </div>
